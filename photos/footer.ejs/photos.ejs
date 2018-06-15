@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+
+
+    <h1><%= header %></h1>
+    <p>Photo application</p>
+
+    <table>
+    <% for(var i=0; i < children.length; i++) { %>
+       <tr>
+         <td><%= children[i].id %></td>
+         <td><%= children[i].name %></td>
+       </tr>
+    <% } %>
+    </table>
+ 
+  </body>
+</html>
+
+
+
