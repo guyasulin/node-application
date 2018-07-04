@@ -1,27 +1,109 @@
 body {
-  padding: 50px;
+  padding: 10px;
+  margin: 10px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   background-size: 20px 20px;
 }
 
 img {
-  color: #00B7FF;
+ height: 300px;
+ margin: 10px;
+ transition: width 2s, height 2s, transform 2s;
 }
-/* .panel-body{
-  display: inline-block;
-  float: right;
-} */
+img:hover{
+  opacity: 0.5;
+  width: 100px;
+    height: 100px;
+    transform: rotate(180deg);
+}
+h3 ,div{
+  display: inline;
+}
+.panel-title{
+  position: relative;
+  top: -10px;
+  right: 400px;
+}
+.panel-heading{
+  display: inline;
+  position: absolute;
+}
+#photos{
+ display:block;
+ margin-top: 30px;
+}
 .photo {
-  width: 50%;
+  width: 30%;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  border: 1px solid black;
 }
-.label-title {
+/* .label-title {
   display: block;
-}
+} */
 .upload-form {
   max-width: 400px;
 }
 input{
   margin: 10px;
   padding: 0;
+}
+
+
+/*madie query*/
+
+@media screen and (max-width: 1300px)  {
+  /* CSS Styles */
+  .panel-title{
+    position: relative;
+    top: -10px;
+    right: 300px;
+  }
+  
+}
+
+/* 1010px Screen */
+@media screen and (max-width: 1010px) {
+  .panel-title{
+    position: relative;
+    top: -10px;
+    right: 200px;
+  }
+}
+  /*800px Screen */
+  @media screen and (max-width: 84px) {
+    .panel-title{
+      position: relative;
+      top: -10px;
+      right:130px;
+    }
+  }
+
+  /*800px Screen */
+@media screen and (max-width: 800px) {
+  .panel-title{
+    position: relative;
+    top: -10px;
+    right:  150px;
+  }
+  .photo{
+    margin-left: 50px;
+  }
+  img {
+    height: 200px;
+    margin: 10px;
+   }
+}
+
+/* 640px Screen */
+@media screen and (max-width: 300px) {
+  img {
+    height: 50px;
+    margin: 10px;
+   }
+}
+
+/* Smartphones and iPhones */
+@media screen and (min-device-width: 320px) and (min-device-width: 480px){
+  /* CSS Styles */
+
 }
